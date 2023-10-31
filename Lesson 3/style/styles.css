@@ -1,0 +1,167 @@
+.body{
+    font-family: 'Inika', serif;
+    font-weight:bold; 
+    font-size:40px;
+    text-align:center;
+}
+
+.header{
+    min-height:54px;
+    max-height:110px;
+    padding-top:25px;
+    padding-bottom:31px;
+    font-size:48px;
+    font-family:'M PLUS 1', sans-serif;
+    font-weight:regular;
+    color:#E8C23E; 
+}
+
+span{
+    color:#3E45E8;
+}
+
+.head{
+    background-image:url("../img/Castle.png");
+    height:803px;
+    width:100%;
+    padding:206px 80px;
+    box-sizing:border-box;
+    background-repeat:no-repeat;
+    margin:0 auto;
+}
+
+.rhyme{
+    background-image:url("../img/Flag.png");
+    height:272px;
+    padding-left:80px;
+    padding-bottom:241px;
+    background-repeat:no-repeat;
+    width:72%;
+    font-size:48px;
+    color:#FFFFFF;
+    vertical-align:top;
+    box-sizing:border-box; 
+}
+
+.h1{
+    padding-left:5.56%;
+    padding-top:72px;
+}
+
+.cards{
+    border: 1px solid rgba(0,0,0,0); /*вiдсутня на картках, але нiби-то проглядає навколо першої, тому й вказана*/
+    width:27.6%;
+    color:#E8C23E;
+    font-size:20px;
+    margin:33px auto 74px;
+    vertical-align:top; 
+    border-radius:30px;
+    overflow: hidden;
+    box-shadow:0px 4px 4px rgba(0,0,0,25%);
+    display:inline-block;
+    text-align:left;
+    padding-bottom:178px;
+}
+
+.card_image{
+    width:100%;
+    text-align:center;    
+}
+
+.card_title{
+    color:#1E8DF2;
+    font-size:24px;
+    box-sizing:border-box;
+    width:65%;
+    padding: 2.5%;      
+}
+
+.card_subtitle{    
+    font-weight:regular;
+    font-size:20px;
+    color:#E8C23E;     
+    box-sizing:border-box;
+    width:95%; 
+    padding: 2.5% 2.5% 0 2.5%;           
+}
+
+.card_interval{
+    margin:33px 28px;
+    width:27.45%;        
+}
+
+.first{
+    padding-bottom:153px;}
+
+.line{ 
+    padding-top:25px;
+    border-bottom:5px solid #3E45E8;
+    width:402px;        
+}
+
+.left{
+    text-align:left;
+}
+
+.center{        
+    text-align:center;        
+    margin:0 auto; 
+}
+
+.country{
+    padding-top:41px;
+}
+
+a{
+    text-decoration:none;
+}
+
+.button{
+    background-color:#2A61F0; 
+    font-size:64px;
+    width:41.04%;
+    height:4.28%;    
+    margin:21px auto 41px; 
+    color:white; 
+    box-sizing:border-box;
+}
+
+.footer{
+    border-top: 1px solid rgba(0,0,0,1);
+    background-color:#2F4A4B;
+    min-height:11.323%; /*еквiвалент 320px але вже на сторiнцi чомусь добирає незважаючи на max-height*/        
+    max-height:11.323%;  
+    font-size:48px;
+    font-family:'M PLUS 1', sans-serif;
+    font-weight:regular;
+    color:#E8C23E; 
+    padding-bottom:85px;  
+    box-sizing:border-box;  
+}
+
+.links{
+    margin:41px auto 21px;
+    font-family: 'Marcellus SC', serif;
+    color:#A89D9D;
+    font-size:36px;
+    font-weight:regular;    
+    width:31.87%;
+    line-height:2;    
+}
+
+.networks{
+    width:64px;
+    margin:0 auto;
+    padding:0 13px 27px 13px;
+    vertical-align: top;
+    display:inline-block;
+    box-sizing:border-box;
+}
+
+#id1{
+    width:71px;
+}
+
+#id2{
+    width:65px;
+}
