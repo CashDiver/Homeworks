@@ -1,0 +1,62 @@
+body{
+    width:1800px;
+}
+
+.cards{
+    vertical-align:top;    
+    overflow: hidden;
+    text-align:center;    
+    box-sizing: border-box;    
+    width:100%;    
+    display:inline-block;
+    margin:0 auto;
+}
+
+.first{
+    background-color:black;
+    width:512px;
+    height:512px;    
+}
+
+.logo{
+    width:309.72px;
+    padding:128.64px 101.28px 0 101px;
+    box-sizing:border-box;
+}
+
+.flag{
+    padding:32.48px 109px 109px 216px;
+    box-sizing:border-box;
+    width:80px;
+}
+
+.second{
+    width:512px;    
+    height:512px;
+    background:linear-gradient(to bottom, #2137FC 50%,#FFCE22 50%);
+    padding-top:8%;
+    box-sizing:border-box;    
+    margin:0 100px;    
+}
+
+.third{
+    width:512px;    
+    height:512px;
+    background:linear-gradient(to bottom, #2137FC 50%,#FFCE22 50%);
+    box-sizing:border-box;
+}
+
+.border{
+    background-image:url("../img/Border.png");
+    background-size:100%;
+    background-repeat:no-repeat;    
+    padding-top:251px;
+    box-sizing:border-box;
+    overflow: hidden;    
+}
+
+.glyph{
+    display:inline-block;
+    width:358px;
+    height:203px;    
+}
