@@ -136,19 +136,16 @@ a{
     font-size:48px;
     font-family:'M PLUS 1', sans-serif;
     font-weight:normal;
-    color:#E8C23E; 
-    padding-bottom:85px;  
-    box-sizing:border-box;  
+    color:#E8C23E;       
 }
 
 .links{
-    margin:41px auto 21px;
+    margin:31px auto 21px;
     font-family: 'Marcellus SC', serif;
     color:#A89D9D;
     font-size:36px;
     font-weight:normal;    
-    width:31.87%;
-    line-height:2;    
+    width:459px;      
 }
 
 .networks{
