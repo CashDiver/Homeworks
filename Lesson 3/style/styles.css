@@ -51,7 +51,7 @@ span{
 
 .cards{
     border: 1px solid rgba(0,0,0,0); /*вiдсутня на картках, але нiби-то проглядає навколо першої, тому й вказана*/
-    width:27.6%;
+    width:397.44px;
     color:#E8C23E;
     font-size:20px;
     margin:33px auto 74px;
@@ -61,7 +61,7 @@ span{
     box-shadow:0px 4px 4px rgba(0,0,0,25%);
     display:inline-block;
     text-align:left;
-    padding-bottom:154px;
+    padding-bottom:84px;
 }
 
 .card_image{
@@ -73,7 +73,7 @@ span{
     color:#1E8DF2;
     font-size:24px;
     box-sizing:border-box;
-    width:65%;
+    width:258.33px;
     padding: 2.5%;      
 }
 
@@ -82,17 +82,18 @@ span{
     font-size:20px;
     color:#E8C23E;     
     box-sizing:border-box;
-    width:95%; 
+    width:65%; 
     padding: 2.5% 2.5% 0 2.5%;           
 }
 
 .card_interval{
-    margin:33px 28px;
-    width:27.45%;        
+    margin:33px 1.95%;
+    width:395.28px;        
 }
 
 .first{
-    padding-bottom:153px;}
+    padding-bottom:58px;
+}
 
 .line{ 
     padding-top:25px;
@@ -111,6 +112,7 @@ span{
 
 .country{
     padding-top:41px;
+    box-sizing:border-box;
 }
 
 a{
@@ -121,10 +123,11 @@ a{
 .button{
     background-color:#2A61F0; 
     font-size:64px;
-    width:41.04%;
-    height:4.28%;    
+    width:591px;
+    height:121px;    
     margin:21px auto 41px; 
     color:white; 
+    padding-top: 10px;
     box-sizing:border-box;
 }
 
@@ -149,18 +152,15 @@ a{
 }
 
 .networks{
-    width:64px;
-    margin:0 auto;
-    padding:0 13px 27px 13px;
-    vertical-align: top;
-    display:inline-block;
+    width:100%;
+    margin:0 auto;    
+    vertical-align: top;      
+}
+
+.icons{
+    width:64px;   
+    padding:0 13px 27px 0; 
+    display:inline-block;  
     box-sizing:border-box;
-}
-
-#id1{
-    width:71px;
-}
-
-#id2{
-    width:65px;
+    overflow:inherit;    
 }
