@@ -76,8 +76,7 @@ a{
     font-size:48px;
     color:#202846;
     padding:10px 0 0 227px;
-    box-sizing: border-box;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 25%);
+    box-sizing: border-box;    
 }
 
 .location{
@@ -299,6 +298,7 @@ a{
     color:#FFFFFF;
     font-size:36px;
     font-weight:normal;
+    font-style:italic;
     position:absolute;
     top:100%;
     left:0%;
