@@ -1,74 +1,65 @@
 body{
     font-family:'PT Sans', sans-serif;
     font-weight: normal;
-    font-size: 22px;
+    font-size:22px;
     background-color:#DCDCDC;
+    width:1920px;
+    min-height:1899px;
+    max-height:1899px;
     margin:0;
     position:relative;
 }
 
 a{
     text-decoration:none;
-    color:inherit;
+    color:inherit;    
 }
 
 .header{
     background-color:#202846;
     width:100%;
-    height:90px;
+    min-height:90px;
+    max-height:90px;
+    display:inline-block;
     box-sizing: border-box;
+    padding:7px 0 10px 138px;
     font-weight:bold;
     color:#FFFFFF;
-    overflow:visible;
-    padding:10px 0 0 0;    
-    vertical-align:top;    
-}
-
-.mount{       
-    box-sizing: border-box;
-    padding-left:7.18vw;
-    width:178.45px;
-    height:70px;
-    display:inline-block; 
-    vertical-align:top;   
 }
 
 .list{
     display:inline-block;
     box-sizing: border-box;
-    padding:7px 0 0 24.53%;
-    font-size:1.09em;    
-    height:57px;
-    overflow:visible;
-    width:55.52%;
-    vertical-align:top;
+    vertical-align: top;
+    padding:10px 54px 6px 471px;
+    font-size:24px;
 }
 
 .menu{
-    display:inline-block;    
-    padding-right:54px;
-    box-sizing: border-box;
-    padding-top:1px;
+    display:inline-block;
     text-align:center;
+    width:170px;
+    padding-top:8px;
+    vertical-align: top;
+    box-sizing: border-box;
 }
 
 .cab{
     display:inline-block;
     text-align:center;
-    width:8.85%;
-    height:57px;
+    width:170px;
 }
 
 .globe{
     box-sizing: border-box;
-    display:inline-block;    
-    padding-left:3.33%;
+    display:inline-block;
 }
 
 .lang{
-    padding:19px 0 0 8px;    
+    padding:20px 0 0 8px;
+    vertical-align: top;
     font-size:28px;
-    box-sizing: border-box;    
+    box-sizing: border-box;
 }
 
 #block{
@@ -78,79 +69,88 @@ a{
 
 .reserv{
     background-color:#C6C6DC;
-    width:100%;    
-    height:90px;
+    width:100%;
+    min-height:90px;
+    max-height:90px;
     font-style:italic;
     font-size:48px;
     color:#202846;
-    padding:0 0 0 11.82%;
+    padding:10px 0 0 227px;
     box-sizing: border-box;    
 }
 
 .location{
     background-color:#E8E8E8;
-    margin:2.94% auto 1.05%;       
-    padding:18px 0px 0px 38.54%;
+    margin:56px 0 20px 216px;
+    padding:18px 0px 0px 574px;
     font-size:28px;
-    width:77.55%;
-    height:73px;    
+    width:1489px;
+    min-height:73px;
+    max-height:73px;
+    display:inline-block;
     box-sizing: border-box;
-    color:rgb(0, 0, 0, 61%);    
+    color:rgb(0, 0, 0, 61%);
 }
 
 .triangle{
     width:34px;
     display:inline-block;
-    padding:0px 18px 0 57.22%;    
+    padding:5px 0 0 525px;    
     box-sizing: border-box;
 }
 
 .cards{
     background-color:#BDBDC6;
-    width:77.55%;
-    height:300px;
-    margin:36px auto;    
+    width:1489px;
+    min-height:300px;
+    max-height:300px;
+    margin:36px 0 0 216px;
+    display:inline-block;
+    vertical-align:top;
     position:relative;
-    z-index:1;    
+    z-index:1;
 }
 
 .img{
-    padding:28px 0 0 6.91%;
+    padding:28px 0 0 103px;
     display:inline-block;
-    width:32.57%;
-    height:81.33%;
+    width:485px;
+    height:244px;
     box-sizing: border-box;    
 }
 
 .title{
-    font-size:1.63em;
+    font-size:36px;
     font-weight: bold;
     font-style:italic;
     color:#353C57;
-    padding:27px 0 0px 6.71%;
+    margin:27px 0 0px 100px;
     display:inline-block;
-    box-sizing: border-box;    
-    width:14.58%;
+    box-sizing: border-box;
+    vertical-align:top;
+    width:500px;
     padding: 0px 0 0 103px;
 }
 
 .star{
-    margin:17px 0 0 325px;    
+    margin:17px 0 0 325px;
+    vertical-align:top;
     display: inline-block;
     fill:white;
 }
 
 .hr{
     color:#FFFFFF;    
-    padding:2px 0 0 47.81%;
+    padding:2px 0 0 712px;
     border-bottom: 3px solid #FFFFFF;    
+    vertical-align:top;
     height:0px;
     box-sizing: border-box;
     float:left;
 }
 
 .text{
-    width:47.81%;
+    width:712px;
     height:184px;
     color:#202846;
     background-color:#D7D7DD;
@@ -169,13 +169,14 @@ a{
     text-align:center;
     padding-top:15px;
     position:relative;
-    left:69.63%;
+    left:1337px;
     top:-70px;
     width:200px;
     height:60px;
-    border-radius:30px;
+    border-radius:48px;
     font-weight:normal;
-    box-sizing: border-box;    
+    box-sizing: border-box;
+    vertical-align:top;
 }
 
 .buttext{
@@ -199,8 +200,8 @@ a{
 }
 
 #txpad4{
-    padding:21px 24px 0;
-    box-sizing: border-box;
+   padding:21px 24px 0;
+   box-sizing: border-box;
 }
 
 #first:hover{
@@ -286,79 +287,18 @@ a{
     margin:26px 30px;    
 }
 
-.class{
-    color:#202846;
-    margin:10%;
-}
-
 .footer{
-    width:100%;    
-    height:90px;
+    width:1920px;
+    min-height:90px;
+    max-height:90px;
     background-color:#202846;
-    padding:21px 0 0 6.66%;
+    padding:21px 0 0 60px;
     box-sizing: border-box;
     color:#FFFFFF;
     font-size:36px;
     font-weight:normal;
     font-style:italic;
     position:absolute;
-    top:250%;
+    top:100%;
     left:0%;
-} 
-
-.sample{
-    background-color:#BDBDC6;
-    width:77.55%;
-    height:15.79%;
-    margin:5% auto;    
-  /*position:relative;
-    z-index:1;*/    
-    padding:1px 0 0 6.91%   
-}
-
-.sampleimg{    
-    display:inline-block;
-    width:32.57%;
-    height:244px;
-    box-sizing: border-box;    
-}
-
-.sampletitle{
-    font-size:36px;
-    font-weight: bold;
-    font-style:italic;
-    color:#353C57;    
-    display:inline-block;
-    box-sizing: border-box;    
-    width:22%;
-    padding: 0px 0 0 39.42%;    
-}
-
-.samplestar{
-    margin:17px 0 0 325px;    
-    display: inline-block;
-    fill:white;
-}
-
-.samplehr{
-    color:#FFFFFF;    
-    padding:2px 0 0 712px;
-    border-bottom: 3px solid #FFFFFF;   
-    
-    height:0px;
-    box-sizing: border-box;
-    float:left;
-}
-
-.sampletext{
-    width:47.81%;
-    height:184px;
-    color:#202846;
-    background-color:#D7D7DD;
-    margin:10px 0 30px 0px;
-    display:inline-block;    
-    text-align:center;
-    font-size:22px;
-    font-weight:normal;
-    font-style:normal;
 }
