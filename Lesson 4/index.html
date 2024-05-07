@@ -12,112 +12,130 @@
 <body>
 
     <div class="header">
-        <div class="mount">
-            <img src="./img/MountainLogo.png" alt="Mountain Logo">
+        <div class="mount" id="Up">
+            <img src="./img/MountainLogo.png" alt="Mountain Logo" id="mount">
         </div>
-        <div class="list">            
-            <div class="menu"><a href="#">ГОЛОВНА</a></div>                        
+        <div class="list">
+            <div class="menu"><a href="#">ГОЛОВНА</a></div>
             <div class="menu"><a href="#">ПРО НАС</a></div>
             <div class="menu"><a href="#">ЗАБРОНЮВАТИ</a></div>
             <div class="menu"><a href="#">КОНТАКТИ</a></div>
-            <div class="cab"><a href="#">ОСОБИСТИЙ КАБIНЕТ</a></div> 
-        </div>
-        <div class="globe"><img src="./img/Globe.png" alt="Globus"></div>
-        <div class="lang" id="block"><a href="#EN">UA</a></div>
+            <div class="cab"><a href="#">ОСОБИСТИЙ КАБIНЕТ</a></div>
+        </div>        
+        <div class="langlogo" id="inline">
+            <div class="globe"><img src="./img/Globe.png" alt="Globus" id="globe"></div>
+            <div class="lang" id="inline"><a href="#EN">UA</a></div>
+        </div>        
     </div>
 
-    <div class="reserv">        
-        Забронювати будиночок    
+    <div class="reserv">
+        Забронювати будиночок
     </div>
-    <div class="location">
-        <div id="block">Оберiть мiсцерозташування</div>
-        <div class="triangle"><a href="#"><svg width="30" height="25" viewBox="0 0 30 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div class="location">        
+        <div class="chooseloc">
+            Оберiть мiсцерозташування
+        </div>
+        <div class="triangle" id="inline"><a href="#"><svg width="30" height="25" viewBox="0 0 30 25" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M15 25L29.7224 0.25H0.277568L15 25Z" fill="black"/>
             </svg></a>
-        </div> 
+        </div>
+    </div>
     </div>
 
     <div class="cards" id="first">
-        <div class="img"><img src="./img/1-Bakota.png" alt="Coast Cottage"></div>
-        <div class="title">Незвідана Бакота
-            <div class="hr"></div>
-            <div class="text" id="txpad1">
-                У Хмельницькій області розташований загублений край -
-                Бакота. Мальовничий каньйон з давньою історією захоплює
-                своїми просторами та незвичною атмосферою. Бджільництво,
-                свіжий мед із польових трав, дотик до природи.
+        <div class="img">
+            <img src="./img/1-Bakota.png" alt="Coast Cottage" id="imgwidth">
+        </div>
+        <div class="cardtext">
+            <div class="title">Незвідана Бакота</div>
+            <div class="text">
+                <div id="texthw">                
+                    У Хмельницькій області розташований загублений край -
+                    Бакота. Мальовничий каньйон з давньою історією захоплює
+                    своїми просторами та незвичною атмосферою. Бджільництво,
+                    свіжий мед із польових трав, дотик до природи.</span>                    
+                    <div class="button">
+                        <a href="#">
+                            <span class="hocuspocus buttext">Детальнiше</span>
+                        </a>             
+                    </div>
+                </div>
             </div>
         </div>
         <svg class="star" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M48.4375 19.6875H30.5469L25 2.34375L19.4531 19.6875H1.5625L16.0156 30.3906L10.5469 47.6562L25 36.9531L39.4531 47.6562L33.9062 30.3125L48.4375 19.6875Z"/>
-        </svg>
-        <div class="button">
-            <a href="#">
-                <span class="hocuspocus buttext">Детальнiше</span>
-            </a>             
-        </div>
+        </svg>        
     </div>
+
     <div class="cards" id="second">
-        <div class="img"><img src="./img/2-Karpati.png" alt="Carpathian Hut"></div>
-        <div class="title">Полонини Карпат
-            <div class="hr"></div>
-            <div class="text" id="txpad2">                
-                Полонини Карпат, у селі Орів посеред гір
-                розташувався затишний куточок для незабутніх
-                вражень. Справжні українські гори, власноручне
-                сироваріння на полонині, водоспади та
-                вікові дерева чекають на Вас.
+        <div class="img"><img src="./img/2-Karpati.png" alt="Carpathian Hut" id="imgwidth"></div>
+        <div class="cardtext">
+            <div class="title">Полонини Карпат</div>
+            <div class="text">
+                <div id="texthw">
+                    Полонини Карпат, у селі Орів посеред гір
+                    розташувався затишний куточок для незабутніх
+                    вражень. Справжні українські гори, власноручне
+                    сироваріння на полонині, водоспади та
+                    вікові дерева чекають на Вас.                    
+                    <div class="button">
+                        <a href="#">
+                            <span class="hocuspocus buttext">Детальнiше</span>
+                        </a>             
+                    </div>
+                </div>
             </div>
         </div>
         <svg class="star" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M48.4375 19.6875H30.5469L25 2.34375L19.4531 19.6875H1.5625L16.0156 30.3906L10.5469 47.6562L25 36.9531L39.4531 47.6562L33.9062 30.3125L48.4375 19.6875Z"/>
         </svg>
-        <div class="button">
-            <a href="#">
-                <span class="hocuspocus buttext">Детальнiше</span>
-            </a>             
-        </div>
     </div>
+
     <div class="cards" id="third">
-        <div class="img"><img src="./img/3-Kyiv.png" alt="Traditional Lodges"></div>
-        <div class="title">Автентична Київщина
-            <div class="hr"></div>
-            <div class="text" id="txpad3">
-                Неподалік центра Києва розташувалось автентичне українське 
-                село на території однойменного села Пирогово. Дерев’яні 
-                млини, запашний хліб, приготовлений своїми руками, 
-                українські пісні та багато іншого чекає на вас уже зараз.
+        <div class="img"><img src="./img/3-Kyiv.png" alt="Traditional Lodges" id="imgwidth"></div>        
+        <div class="cardtext">
+            <div class="title">Автентична Київщина</div>
+            <div class="text">
+                <div id="texthw">
+                    Неподалік центра Києва розташувалось автентичне українське 
+                    село на території однойменного села Пирогово. Дерев’яні 
+                    млини, запашний хліб, приготовлений своїми руками, 
+                    українські пісні та багато іншого чекає на вас уже зараз.                    
+                    <div class="button">
+                        <a href="#">
+                            <span class="hocuspocus buttext">Детальнiше</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
         <svg class="star" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M48.4375 19.6875H30.5469L25 2.34375L19.4531 19.6875H1.5625L16.0156 30.3906L10.5469 47.6562L25 36.9531L39.4531 47.6562L33.9062 30.3125L48.4375 19.6875Z"/>
         </svg>
-        <div class="button">
-            <a href="#">
-                <span class="hocuspocus buttext">Детальнiше</span>
-            </a>             
-        </div>
     </div>
+
     <div class="cards" id="fourth">
-        <div class="img"><img src="./img/4-Odessa.png" alt="Water Streets"></div>
-        <div class="title">Нетипова Одещина
-            <div class="hr"></div>
-            <div class="text" id="txpad4">                
-                В Одеській області знаходиться мальовниче містечко Вилкове.
-                Його ще називають «українською Венецією». Вилкове - це містечко
-                на воді, весь в каналах. Розташоване в місці, де зустрічаються річка
-                Дунай і Чорне море. Люди пересуваються переважно човнами.
-                Нетипове українське село не залишить Вас без вражень.
+        <div class="img"><img src="./img/4-Odessa.png" alt="Water Streets" id="imgwidth"></div>
+        <div class="cardtext">
+            <div class="title">Нетипова Одещина</div>
+            <div class="text">
+                <div id="texthw">
+                    В Одеській області знаходиться мальовниче містечко Вилкове.
+                    Його ще називають «українською Венецією». Вилкове - це містечко
+                    на воді, весь в каналах. Розташоване в місці, де зустрічаються річка
+                    Дунай і Чорне море. Люди пересуваються переважно човнами.
+                    Нетипове українське село не залишить Вас без вражень.                    
+                    <div class="button">
+                        <a href="#">
+                            <span class="hocuspocus buttext">Детальнiше</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
         <svg class="star" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M48.4375 19.6875H30.5469L25 2.34375L19.4531 19.6875H1.5625L16.0156 30.3906L10.5469 47.6562L25 36.9531L39.4531 47.6562L33.9062 30.3125L48.4375 19.6875Z"/>
         </svg>
-        <div class="button">
-            <a href="#">
-                <span class="hocuspocus buttext">Детальнiше</span>
-            </a>             
-        </div>
     </div>
 
     <div class="blank">
@@ -129,17 +147,9 @@
             </span>
         </a>
     </div>
-    <hr class="class">
-    <div class="sample">
-        <div class="sampleimg">
-            <img src="./img/1-Bakota.png" alt="Bakota">
-        </div>
-        <div class="sampletitle">Автентична Київщина</div>
-    </div>
-    <div class="samplestar"></div>
-    <div class="samplehr"></div>
-    <div class="sampletext"></div>
 
+    <!-- <hr class="class"> -->
+    
     <div class="footer">
         © 2021 HolidayTime.  All rights reserved.
     </div>

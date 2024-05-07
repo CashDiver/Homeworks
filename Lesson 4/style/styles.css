@@ -3,8 +3,7 @@ body{
     font-weight: normal;
     font-size: 22px;
     background-color:#DCDCDC;
-    margin:0;
-    position:relative;
+    margin:0;    
 }
 
 a{
@@ -13,153 +12,187 @@ a{
 }
 
 .header{
-    background-color:#202846;
-    width:100%;
-    height:90px;
-    box-sizing: border-box;
+    background-color:#202846;    
+    min-height:90px;    /*min-height 4.76% как результат 90/1889*100* почему-то соответствовал 63px контента*/
     font-weight:bold;
     color:#FFFFFF;
     overflow:visible;
-    padding:10px 0 0 0;    
+    padding-top:10px; /*11.11%, соответствующие 10px от 90px height'а, на деле составляют 600-700*/
+    padding-left:clamp(6.9px, 7.18%, 7.18%); /*A clamp takes three values; the minimum, preferred, and maximum values, in that order.*/
+    box-sizing:border-box;    
+}
+
+.mount{
+    width:min(178.45px, 10%); /*9.29%;*/
+    max-height:77.77%;    
+    display: inline-block;
     vertical-align:top;    
 }
 
-.mount{       
-    box-sizing: border-box;
-    padding-left:7.18vw;
-    width:178.45px;
-    height:70px;
-    display:inline-block; 
-    vertical-align:top;   
+#mount{
+    max-width:100%;
+    height:100%;   
 }
 
 .list{
-    display:inline-block;
-    box-sizing: border-box;
-    padding:7px 0 0 24.53%;
-    font-size:1.09em;    
-    height:57px;
+    display:inline-block;    
+    font-size:1.09em;
     overflow:visible;
-    width:55.52%;
-    vertical-align:top;
+    width:clamp(55.52%, 60.26%, 75%); /*статичных 55.52% для preferred значения, эквивалентных 1066 px, не хватает для предотвращения схлопывания меню на разрешениях меньше макетного, ну и хотя мы ещё этого не проходили, функции min, max и clap не flex, а сродни префиксам min и max, поэтому теоретически допустимы*/    
+    box-sizing: border-box;
+    margin-left:clamp(3.76%, 15.23%, 15.23%);/*min(292.55px, 11%); /*15.23*/
+    height:69px;
+    text-align:center;
 }
 
 .menu{
-    display:inline-block;    
-    padding-right:54px;
-    box-sizing: border-box;
-    padding-top:1px;
-    text-align:center;
+    display:inline-block;
+    margin-right:clamp(0.65%, 5.06%, 5.06%); /*также пробное предотвращение комкания меню*/
+    max-width:15.94%;
+    box-sizing: border-box;    
+    padding-top:9px;    
+    vertical-align:top;     
 }
 
 .cab{
-    display:inline-block;
+    display:inline-block;    
+    max-width:15.94%;
     text-align:center;
-    width:8.85%;
-    height:57px;
+    padding-top:7px;    
 }
 
-.globe{
+.langlogo{
+    max-width:6.14%;
+    vertical-align:top;
+    margin-right:min(63px, 10%); 
+    text-align:right;
+    padding-top:9px;
+}
+
+.globe{    
+    padding-left:min(8px, 15%); /*6.77%*/
     box-sizing: border-box;
-    display:inline-block;    
-    padding-left:3.33%;
+    display: inline-block;
+    vertical-align:top;
+    width:63%;    
+}
+
+#globe{
+    width:100%;
 }
 
 .lang{
-    padding:19px 0 0 8px;    
+    padding-top:11px;    
     font-size:28px;
-    box-sizing: border-box;    
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align:top;
+    max-width:29%;
 }
 
-#block{
+#inline{
     display:inline-block;
     color:inherit;
 }
 
 .reserv{
     background-color:#C6C6DC;
-    width:100%;    
     height:90px;
     font-style:italic;
     font-size:48px;
     color:#202846;
     padding:0 0 0 11.82%;
-    box-sizing: border-box;    
 }
 
 .location{
     background-color:#E8E8E8;
-    margin:2.94% auto 1.05%;       
-    padding:18px 0px 0px 38.54%;
-    font-size:28px;
+    margin:2.94% auto 1.05%;
+    height:73px;          /*пришлось указывать в px, иначе получается по контенту*/
     width:77.55%;
-    height:73px;    
+    font-size:28px;
+    padding-top:17.5px;   /*24% как результат padding-top 17.5px/73px height блока выталкивает слова из блока*/
     box-sizing: border-box;
-    color:rgb(0, 0, 0, 61%);    
+    text-align:center;
+    position:relative;
+}
+
+.chooseloc{
+    color:rgb(0, 0, 0, 61%);
+    width:fit-content;
+    display:inline-block;
 }
 
 .triangle{
-    width:34px;
-    display:inline-block;
-    padding:0px 18px 0 57.22%;    
+    width:34px;            /*статичный элемент, поэтому width в px*/    
     box-sizing: border-box;
+    position:absolute;
+    right:0.94%;
 }
 
 .cards{
     background-color:#BDBDC6;
     width:77.55%;
-    height:300px;
-    margin:36px auto;    
-    position:relative;
-    z-index:1;    
+    min-height:15.88%;
+    margin:1.9% auto;
+    padding: 27px 1.14% 1% 0; /*padding-top 27px/300px height'а карточки будет 9% - слишком много. При этом 1.42% как результат 27px/1889px height макета подходит*/
+    position: relative;
 }
 
 .img{
-    padding:28px 0 0 6.91%;
     display:inline-block;
-    width:32.57%;
-    height:81.33%;
-    box-sizing: border-box;    
+    width:32.31%;
+    min-height:81%;
+    vertical-align:top;
+    box-sizing: border-box;
+    margin:1px 6.91% 0 6.85%;
+}
+
+#imgwidth{
+    width:100%;    
+}
+
+.cardtext{
+    width:47.81%;
+    min-height:91%;
+    display:inline-block;
 }
 
 .title{
-    font-size:1.63em;
     font-weight: bold;
     font-style:italic;
+    font-size:36px;
     color:#353C57;
-    padding:27px 0 0px 6.71%;
-    display:inline-block;
-    box-sizing: border-box;    
-    width:14.58%;
-    padding: 0px 0 0 103px;
-}
-
-.star{
-    margin:17px 0 0 325px;    
-    display: inline-block;
-    fill:white;
-}
-
-.hr{
-    color:#FFFFFF;    
-    padding:2px 0 0 47.81%;
-    border-bottom: 3px solid #FFFFFF;    
-    height:0px;
+    display:inline-block;    
+    vertical-align:top;
     box-sizing: border-box;
-    float:left;
+    width:100%;    
+    margin-left:0.067%;
+    border-bottom: 3px solid #FFFFFF;
 }
 
 .text{
-    width:47.81%;
-    height:184px;
+    min-height:67.39%;  /*не действует, всё получается по контенту, с тем же успехом можно было бы вообще не указывать*/  
     color:#202846;
     background-color:#D7D7DD;
-    margin:10px 0 30px 0px;
-    display:inline-block;    
+    display:inline-block;
     text-align:center;
-    font-size:22px;
+    position:relative;
+    margin-top:11.5px;   /*4.21% как результат 11.5/273 (у карточек padding-top 27px) делает слишком большой отступ*/
+    width:100%;
+    min-height:100%;
     font-weight:normal;
     font-style:normal;
+    display:inline-block; 
+    padding:28px 3% 23px; /*То же самое, что с margin-top, 10.25% top и 8.42% bottom слишком большие паддинги. Может, не тот делитель? 1.48% и 1.21% с делителем 1889px выглядят узковато*/
+    box-sizing: border-box; 
+}
+
+.star{
+    display: inline-block;
+    fill:white;
+    position:absolute;
+    right:1.14%;
+    top:5.666%;
 }
 
 .button{
@@ -167,40 +200,18 @@ a{
     color:#FFFFFF;
     font-size:24px;
     text-align:center;
-    padding-top:15px;
-    position:relative;
-    left:69.63%;
-    top:-70px;
+    position:absolute;
+    left:91%;
+    bottom:-10%; 
     width:200px;
     height:60px;
     border-radius:30px;
     font-weight:normal;
-    box-sizing: border-box;    
+    z-index:1;
 }
 
 .buttext{
-    padding-top:15px;
-    box-sizing: border-box;
-}
-
-#txpad1{
-    padding:21px 24px 0 23px;
-    box-sizing: border-box;
-}
-
-#txpad2{
-    padding:21px 103px 23px;
-    box-sizing: border-box;
-}
-
-#txpad3{
-    padding:21px 24px 23px;
-    box-sizing: border-box;
-}
-
-#txpad4{
-    padding:21px 24px 0;
-    box-sizing: border-box;
+    padding-top:15px;    
 }
 
 #first:hover{
@@ -264,7 +275,7 @@ a{
     max-height:101px;    
     left:91.875%;
     top:70.93%;    
-    z-index: 1; 
+    z-index: 2; 
 }
 
 .hocuspocus{ 
@@ -277,88 +288,80 @@ a{
 }
 
 .arrow{
-    position:relative;
-    box-sizing: border-box;
+    position:relative;    
     text-align:center;   
-    z-index:2;
+    z-index:3;
     width:43.29px;
     height:50.5px;
     margin:26px 30px;    
 }
 
-.class{
-    color:#202846;
-    margin:10%;
+/*
+#txpad1{
+    padding:21px 24px 0 23px;
+    box-sizing: border-box;
 }
 
-.footer{
-    width:100%;    
+#txpad2{
+    padding:21px 103px 23px;
+    box-sizing: border-box;
+}
+
+#txpad3{
+    padding:21px 24px 23px;
+    box-sizing: border-box;
+}
+
+#txpad4{
+    padding:21px 24px 0;
+    box-sizing: border-box;
+}
+-------------------------------------------------
+.class{
+    color:#202846;
+    margin:10%; display:
+}
+*/
+
+.footer{    
     height:90px;
     background-color:#202846;
-    padding:21px 0 0 6.66%;
-    box-sizing: border-box;
+    padding:21px 0 0 6.66%;    
     color:#FFFFFF;
     font-size:36px;
     font-weight:normal;
-    font-style:italic;
-    position:absolute;
-    top:250%;
-    left:0%;
-} 
-
-.sample{
-    background-color:#BDBDC6;
-    width:77.55%;
-    height:15.79%;
-    margin:5% auto;    
-  /*position:relative;
-    z-index:1;*/    
-    padding:1px 0 0 6.91%   
+    font-style:italic;    
+    width:auto;
+    margin-top:4.6%;
 }
 
-.sampleimg{    
-    display:inline-block;
-    width:32.57%;
-    height:244px;
-    box-sizing: border-box;    
-}
-
-.sampletitle{
-    font-size:36px;
-    font-weight: bold;
-    font-style:italic;
-    color:#353C57;    
-    display:inline-block;
-    box-sizing: border-box;    
-    width:22%;
-    padding: 0px 0 0 39.42%;    
-}
-
-.samplestar{
-    margin:17px 0 0 325px;    
-    display: inline-block;
-    fill:white;
-}
-
-.samplehr{
-    color:#FFFFFF;    
-    padding:2px 0 0 712px;
-    border-bottom: 3px solid #FFFFFF;   
-    
-    height:0px;
-    box-sizing: border-box;
-    float:left;
-}
-
-.sampletext{
-    width:47.81%;
-    height:184px;
-    color:#202846;
-    background-color:#D7D7DD;
-    margin:10px 0 30px 0px;
+/*
+.list{
     display:inline-block;    
-    text-align:center;
-    font-size:22px;
-    font-weight:normal;
-    font-style:normal;
+    padding-top:8px;
+    font-size:1.09em;    
+    min-height:57px;
+    overflow:visible;
+    width:43.85%;
+    vertical-align:top;
+    box-sizing: border-box;
+    margin-left:15.23%;
 }
+
+.menu{
+    display:inline-block;    
+    padding-right:6.41%;        
+    text-align:center;    
+    width:19%; /*20.19%*//*    (!)
+}
+
+.cab{
+    display:inline-block;
+    text-align:center;
+    width:8.85%;
+    max-height:57px;
+    vertical-align:top;
+    margin-left:0.52%;
+}
+
+*/
