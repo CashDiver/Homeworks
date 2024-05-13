@@ -1,3 +1,7 @@
+*{
+    box-sizing:border-box;
+}
+
 body{
     font-family:'PT Sans', sans-serif;
     font-weight: normal;
@@ -13,81 +17,83 @@ a{
 
 .header{
     background-color:#202846;    
-    min-height:90px;    /*min-height 4.76% как результат 90/1889*100* почему-то соответствовал 63px контента*/
+    height:4.76%;    /*min-height 4.76% как результат 90/1889*100 на деле не только соответсвует контенту, но и вообще ни на что не влияет*/    
     font-weight:bold;
     color:#FFFFFF;
-    overflow:visible;
-    padding-top:10px; /*11.11%, соответствующие 10px от 90px height'а, на деле составляют 600-700*/
-    padding-left:clamp(6.9px, 7.18%, 7.18%); /*A clamp takes three values; the minimum, preferred, and maximum values, in that order.*/
-    box-sizing:border-box;    
+    overflow:visible;    
+    padding-left:7.18%;     
 }
 
 .mount{
-    width:min(178.45px, 10%); /*9.29%;*/
+    width:9.29;
     max-height:77.77%;    
-    display: inline-block;
-    vertical-align:top;    
+    display: inline-block;    
+    padding-top:0.52%;
+    vertical-align: top;
 }
 
 #mount{
-    max-width:100%;
-    height:100%;   
+    width:100%;
+}
+
+.headalign{
+    text-align:center;
+    width:74.1%; /*1422.55px, до лого включительно - 316.45px или 16.48%, остальному контенту 1603.55px или 83.51%*/    
+    height:4.76%;/*идентично header*/ 
+    padding-top:0.52%; 
 }
 
 .list{
-    display:inline-block;    
+    display:inline-block;
     font-size:1.09em;
     overflow:visible;
-    width:clamp(55.52%, 60.26%, 75%); /*статичных 55.52% для preferred значения, эквивалентных 1066 px, не хватает для предотвращения схлопывания меню на разрешениях меньше макетного, ну и хотя мы ещё этого не проходили, функции min, max и clap не flex, а сродни префиксам min и max, поэтому теоретически допустимы*/    
-    box-sizing: border-box;
-    margin-left:clamp(3.76%, 15.23%, 15.23%);/*min(292.55px, 11%); /*15.23*/
-    height:69px;
-    text-align:center;
+    width:100%;
+    text-align:right;
+    margin-right:0.52%;
 }
 
 .menu{
     display:inline-block;
-    margin-right:clamp(0.65%, 5.06%, 5.06%); /*также пробное предотвращение комкания меню*/
-    max-width:15.94%;
-    box-sizing: border-box;    
-    padding-top:9px;    
-    vertical-align:top;     
+    width:fit-content;
+    vertical-align:middle;
+}
+
+.gap{
+    width:3.7%;
+    display: inline-block;
+    vertical-align:middle;
 }
 
 .cab{
-    display:inline-block;    
-    max-width:15.94%;
+    display:inline-block;
+    max-width:15%;
     text-align:center;
-    padding-top:7px;    
+    vertical-align:middle;
 }
 
 .langlogo{
-    max-width:6.14%;
-    vertical-align:top;
-    margin-right:min(63px, 10%); 
-    text-align:right;
-    padding-top:9px;
+    width:6.14%;
+    vertical-align:middle;
+    text-align: left;    
 }
 
-.globe{    
-    padding-left:min(8px, 15%); /*6.77%*/
-    box-sizing: border-box;
+.globe{
     display: inline-block;
-    vertical-align:top;
-    width:63%;    
+    width:63%;
+    vertical-align:middle;
+    color:rgb(255, 255, 255, 0.63);
 }
 
 #globe{
-    width:100%;
+    max-width:80%; /*60px*/    
 }
 
 .lang{
-    padding-top:11px;    
     font-size:28px;
-    box-sizing: border-box;
     display: inline-block;
-    vertical-align:top;
-    max-width:29%;
+    width:29.66%;
+    vertical-align: middle;
+    padding-left:6.77%;
 }
 
 #inline{
@@ -101,7 +107,8 @@ a{
     font-style:italic;
     font-size:48px;
     color:#202846;
-    padding:0 0 0 11.82%;
+    padding-left:11.82%;
+    vertical-align: middle;
 }
 
 .location{
@@ -110,8 +117,7 @@ a{
     height:73px;          /*пришлось указывать в px, иначе получается по контенту*/
     width:77.55%;
     font-size:28px;
-    padding-top:17.5px;   /*24% как результат padding-top 17.5px/73px height блока выталкивает слова из блока*/
-    box-sizing: border-box;
+    padding-top:17.5px;   /*24% как результат padding-top 17.5px/73px height блока выталкивает слова из блока, значительно расширяя его*/
     text-align:center;
     position:relative;
 }
@@ -123,8 +129,7 @@ a{
 }
 
 .triangle{
-    width:34px;            /*статичный элемент, поэтому width в px*/    
-    box-sizing: border-box;
+    width:34px;            /*статичный элемент, поэтому width в px*/        
     position:absolute;
     right:0.94%;
 }
@@ -134,7 +139,7 @@ a{
     width:77.55%;
     min-height:15.88%;
     margin:1.9% auto;
-    padding: 27px 1.14% 1% 0; /*padding-top 27px/300px height'а карточки будет 9% - слишком много. При этом 1.42% как результат 27px/1889px height макета подходит*/
+    padding: 27px 1.14% 1% 0; /*padding-top 27px/300px height'а карточки составит 9% - получается несоразмерно. При этом 1.42% как результат 27px/1889px height'а всего макета подходит*/
     position: relative;
 }
 
@@ -142,13 +147,12 @@ a{
     display:inline-block;
     width:32.31%;
     min-height:81%;
-    vertical-align:top;
-    box-sizing: border-box;
+    vertical-align:top;    
     margin:1px 6.91% 0 6.85%;
 }
 
 #imgwidth{
-    width:100%;    
+    width:100%;
 }
 
 .cardtext{
@@ -162,10 +166,6 @@ a{
     font-style:italic;
     font-size:36px;
     color:#353C57;
-    display:inline-block;    
-    vertical-align:top;
-    box-sizing: border-box;
-    width:100%;    
     margin-left:0.067%;
     border-bottom: 3px solid #FFFFFF;
 }
@@ -183,8 +183,7 @@ a{
     font-weight:normal;
     font-style:normal;
     display:inline-block; 
-    padding:28px 3% 23px; /*То же самое, что с margin-top, 10.25% top и 8.42% bottom слишком большие паддинги. Может, не тот делитель? 1.48% и 1.21% с делителем 1889px выглядят узковато*/
-    box-sizing: border-box; 
+    padding:28px 3% 23px; /*То же самое, что с margin-top, 10.25% top и 8.42% bottom слишком большие паддинги. Может, не тот делитель? 1.48% и 1.21% с делителем 1889px выглядят узковато*/    
 }
 
 .star{
@@ -296,33 +295,6 @@ a{
     margin:26px 30px;    
 }
 
-/*
-#txpad1{
-    padding:21px 24px 0 23px;
-    box-sizing: border-box;
-}
-
-#txpad2{
-    padding:21px 103px 23px;
-    box-sizing: border-box;
-}
-
-#txpad3{
-    padding:21px 24px 23px;
-    box-sizing: border-box;
-}
-
-#txpad4{
-    padding:21px 24px 0;
-    box-sizing: border-box;
-}
--------------------------------------------------
-.class{
-    color:#202846;
-    margin:10%; display:
-}
-*/
-
 .footer{    
     height:90px;
     background-color:#202846;
@@ -336,32 +308,19 @@ a{
 }
 
 /*
-.list{
-    display:inline-block;    
-    padding-top:8px;
-    font-size:1.09em;    
-    min-height:57px;
-    overflow:visible;
-    width:43.85%;
-    vertical-align:top;
-    box-sizing: border-box;
-    margin-left:15.23%;
+#txpad1{
+    padding:21px 24px 0 23px;    
 }
 
-.menu{
-    display:inline-block;    
-    padding-right:6.41%;        
-    text-align:center;    
-    width:19%; /*20.19%*//*    (!)
+#txpad2{
+    padding:21px 103px 23px;    
 }
 
-.cab{
-    display:inline-block;
-    text-align:center;
-    width:8.85%;
-    max-height:57px;
-    vertical-align:top;
-    margin-left:0.52%;
+#txpad3{
+    padding:21px 24px 23px;    
 }
 
+#txpad4{
+    padding:21px 24px 0;    
+}
 */
