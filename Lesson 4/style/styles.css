@@ -43,7 +43,7 @@ section{
 .headalign{
     text-align:right;
     width:88.18%;
-    padding:0.52% 0.64% 0 0;
+    padding:0.52% 0.64% 0 0;    
 }
 
 .list{
@@ -52,6 +52,7 @@ section{
     overflow:visible;
     width:100%;
     text-align:right;    
+    box-sizing: border-box;    
 }
 
 .menu{
@@ -59,12 +60,7 @@ section{
     width:fit-content;
     vertical-align:middle;
     padding-top:0.423%;
-}
-
-.gap{
-    width:3.9%;
-    display: inline-block;
-    vertical-align:middle;
+    margin-right:2.8%;
 }
 
 .cab{
@@ -73,6 +69,7 @@ section{
     text-align:center;
     vertical-align:middle;
     padding-top:0.37%;
+    margin-right:3.9%;
 }
 
 .langlogo{
