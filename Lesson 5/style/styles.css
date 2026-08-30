@@ -1,0 +1,368 @@
+body, ul, ol {
+    background-color: #212529;    
+    box-sizing: border-box;
+    font-family: "Poppins", "Inter", "Roboto", "Work Sans", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    margin:0;    
+    color:white;
+}
+
+a {
+    text-decoration: none;
+    color:inherit;
+    cursor:url(../img/Thief3.png) 10 10, grab;
+}
+
+header{
+    width:93.19%; 
+    height: 66px;
+    margin:0 auto;    
+    display:flex;    
+    justify-content: space-between;
+    align-items: center;
+    font-size:1.125rem;
+    font-weight:600;
+    padding:1.18% 3.48% 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    width:0.067%;
+    cursor:url(../img/Thief2.png) 14 14, grab;    
+}
+
+.list{
+    width:31.96%;
+    height:3.5%;            
+    display:flex;    
+    align-items: center;    
+    box-sizing: border-box;
+    margin:0 auto;
+    text-transform: capitalize;
+}
+
+/*       Flex descendants have "flex-basis: auto" property,
+.menu{   so their width already should be "fit-content" what 
+    width:fit-content;         makes width property surfeit.
+}*/
+
+.menupadding{
+    padding:0.625rem 0.781rem;
+    box-sizing: border-box;
+}
+
+.menuleft{
+    padding:0.625rem 0.78rem 0.625rem 0.625rem;
+    box-sizing: border-box;
+}
+
+.menuright{
+    padding:0.625rem 0.625rem 0.625rem 0.78rem;
+    box-sizing: border-box;
+}
+
+.menu:hover {    
+    color:#FBB742; 
+    transition: all 0.035s;        
+}
+
+.hire-btn{
+    text-align: center;    
+    border-radius: 50px;
+    color:black;
+    background-color:#FFB742;         
+    padding: 0.9% 1.93%; /*button area counted from div content*/
+    box-sizing: border-box;    
+    font-weight:bold;
+    display:flex;   /*allows same string hover::after*/
+    width:fit-content;
+    text-transform:capitalize;
+    cursor:url(../img/Thief2.png) 14 14, grab;    
+}
+
+.hire-btn:hover{ /*needs separate rule*/
+    color:white;
+    transition: all 0.3s;
+}
+
+.hire-btn:hover::after{ /*effects stuff only*/
+    content:'\1F970';
+}
+
+main{
+    margin: 7.39% auto 8.07%;    
+}
+
+.greetings{
+    text-align:center;
+    font-family:"Inter", sans-serif; 
+    font-weight:bold;
+    text-transform:capitalize;
+    font-size:1.125rem;
+    margin: 0 0 8.52rem;    
+}
+
+.font32{
+    font-size:2rem;
+    text-transform:capitalize;
+}
+
+.performer {
+    text-decoration: underline;
+    color:#FBB742;
+    cursor:url(../img/Thief2.png) 14 14, grab;
+}
+
+.symbol{
+    color:#FBB742;
+    cursor:url(../img/Thief2.png) 14 14, grab;        
+}
+
+.h1{
+    font-size:3rem;
+    text-transform:capitalize;
+}
+
+.font24{
+    font-size:1.5rem;
+    font-weight:normal;
+    padding:1.56rem 0 1.375rem;    
+}
+
+.cutaway{
+    width:90%;
+    margin:0 auto;
+    display:flex;    
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;    
+    text-align:center;
+    padding:0 1.52%;
+    box-sizing: border-box;
+}
+
+.cards{
+    background-color:#292B2E;
+    width:32.09%;
+    height:7.5rem;
+    display:flex;    
+    align-items: center;
+    justify-content:space-between;
+    padding:0 2.31%;
+    border-radius: 10px; 
+    box-sizing: border-box;
+    text-align: center;
+    cursor:url(../img/Thief2.png) 14 14, grab;    
+}
+
+.middlecard{
+    margin: 0 1.85%;
+}
+
+.cardimage{
+    width:15.38%;    
+}
+
+.cardsH{
+    font-size:2rem;
+    color:#FBB742;
+}
+
+.cardstext{
+    width:fit-content;    
+    font-weight: bold;     /*check*/
+}
+
+.cards:hover, .cards:hover span, .cards:hover #Vector{
+    background-color:#FBB742;
+    color:#212529;
+    fill:rgb(33,37,41);
+    transition: all 0.035s;
+}
+
+.about{
+    margin:9.51% auto 4.5%;    
+    display:flex;
+    width:93.195%;
+    align-items: center;    
+}
+
+.physia{
+    width:38.75rem;
+    margin-right:3.125rem;
+    cursor:url(../img/Thief2.png) 14 14, grab;    
+}
+
+.physiaimg{
+    width:100%;
+}
+
+.info{
+    width:50%;        
+    min-height:71.81%;
+    margin:auto 0;    
+}
+
+.infotitles{    
+    width:fit-content;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+}
+
+.pretitle{
+    text-transform: uppercase;
+    padding: 2.85% 11.9%;
+    box-sizing: border-box;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255, 8%);
+    color:#FBB742;
+    width:fit-content;    
+    font-size:1.25rem;
+    font-weight: 600;    
+}
+
+.roboto{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+
+.infotext{
+    max-height:9.12%;
+    overflow: visible;
+    width:fit-content;
+    margin:9.17% 0;
+    font-size:1rem;
+    line-height:2; 
+}
+
+.btn2{
+    padding:1.78% 5.84%;
+}
+
+.btn2:hover::after{
+    content:'\1F977';
+}
+
+.works{
+    width:85.69%; 
+    text-transform:capitalize;
+    margin: 0 auto;
+}
+
+.block{
+    margin:0 auto;
+    width:fit-content;
+}
+
+.list2{
+    margin:3.82% auto 50px;
+    text-decoration: none;
+    list-style: none;
+    width:fit-content;
+    padding:0 6.3%;
+    box-sizing: border-box;    
+    font-weight: 600;
+}
+
+li{
+    margin:0 1.5rem;
+    display:inline-block;
+    flex-grow:1;
+    flex-shrink: 1;
+    width:fit-content;
+}
+
+.samples{
+    width:85.69%; 
+    display:flex; 
+    justify-content: center;
+    flex-wrap:wrap;
+    margin:0 auto;
+}
+
+.sample{                    /*also could be 2 samples each by stroke if lack of scale*/
+    margin:0 2rem 2rem 0;
+    width:25.6%;            
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+footer{
+    background-color:#1C1C1C;
+    height:29.375rem;
+    padding:9.25rem 3.33% 0;
+    box-sizing: border-box;
+    font-weight:bold;
+    display:flex;
+}
+
+.sign{
+    width:22.43rem;
+    text-transform: none;
+    margin-right:1.58%;
+}
+
+.signtext{
+    font-weight: 600;
+    text-transform: capitalize;    
+    line-height: 2;
+    width:15.81rem;
+    padding-top:1.75rem;
+    box-sizing: border-box;
+    font-family: "Work Sans";
+    text-decoration: none;
+    color:#D4D4D4;
+}
+
+.fmenus{
+    text-transform: capitalize;
+    display:flex;
+    justify-content:space-between;
+    width:66.6%;
+}
+
+.footmenu{
+    display:flex;
+    flex-direction: column;
+    font-family: "Work Sans";
+}
+
+.footmenu3{
+    width:33.22%;    
+}
+
+.fmenuh{
+    font-size:1.375rem;
+    color:#F5FBF2;
+    margin-bottom: 1.0625rem;
+}
+
+.footlinks{    
+    font-size:1.125rem;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    color:#7B7B7B;    
+    font-size:1.125rem;    
+}
+
+.footlink{
+    width:fit-content;
+    margin: 0.5rem 0;
+}
+
+.mail{     
+    color:#7B7B7B;
+    font-size:1.125rem;
+    text-transform: none;
+    line-height:2;
+}
+
+/*
+waving hand \1F44B
+upper button \1F970
+about button \1F977
+*/
